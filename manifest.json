@@ -1,0 +1,18 @@
+  {
+    "name": "Browser Lock",
+    "version": "1.0",
+    "description": "Simple Password Lock for your Browser!",
+    "permissions": ["storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "icons": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    },
+	"options_page": "options.html",
+    "manifest_version": 2
+  }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table {
+				padding-top: 30px;
+			}
+			
+			td {
+				height: 30px;
+			}
+			
+			div {
+				text-align: center;
+			}
+			
+			.col1 {
+				width: 150px;
+			}
+			
+			.col3 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table align="center">
+				<tr>
+					<td class="col1">Old Password: <br/>(Leave blank if N/A) </td>
+					<td class="col2"><input type="password" id="oldPass" name="oldPass"/></td>
+				</tr>
+				<tr>
+					<td class="col1">New Password: </td>
+					<td class="col2"><input type="password" id="newPass" name="newPass"/></td>
+				</tr>
+				<tr>
+					<td class="col1">Confirm Password: </td>
+					<td class="col2"><input type="password" id="cfmPass" name="cfmPass"/></td>
+				</tr>
+				<tr>
+					<td class="col3" style="padding-top: 9px;"><input type="button" value="Submit" id="submitbtn"></td>
+					<td class="col3" style="padding-top: 9px;"><input type="button" value="Reset" id="resetbtn"></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="col3">
+						<p id="message" color="red"></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<hr />
+		<div style="width: 50%; float: left;">
+			<h1>To update a new password:</h1>
+			<p>1) Enter your old password, if none, leave it blank.</p>
+			<p>2) Enter your new password in both "New Password" and "Confirm Password".</p>
+			<p>3) If successful, a text <i>"Password set!"</i> will be shown below.</p>
+		</div>
+		<div style="width: 50%; float: right;">
+			<h1>To reset your old password:</h1>
+			<p>1) Enter your old password, if none, leave it blank.</p>
+			<p>2) Leave both "New Password" and "Confirm Password" blank too.</p>
+			<p>3) If successful, a text <i>"Password reset!"</i> will be shown below.</p>
+		</div>
+	</body>
+	<script src="options.js"></script>
+</html>
